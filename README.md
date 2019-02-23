@@ -20,5 +20,8 @@ Constructions supported yet (subject to change):
 - случайно - random
 - функция - function
 - переменная - let
+- импорт - import
+- экспорт - export
+- дефолт - default
 
 ## Use in production at your own risk
