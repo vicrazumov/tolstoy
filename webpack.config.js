@@ -1,8 +1,8 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
   entry: './src/индекс.лн',
-  mode: 'development',
+  mode: 'production',
   module: {
     rules: [
       {
@@ -10,7 +10,9 @@ module.exports = {
         use: [
           {
             loader: path.resolve('./webpack-plugins/tolstoy.js'),
-            // options: {/* ... */}
+            options: {
+              test: 'this is test',
+            },
           }
         ]
       }
@@ -20,4 +22,4 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist')
   }
-};
+}
